@@ -1,0 +1,193 @@
+./ClonalFrameML "ML_MERS-CoV.85.CFM.newick" MERS-CoV.85.CFM.fasta MERS-CoV.85.CFM -rescale_no_recombination true -compress_reconstructed_sites false -kappa 6.187
+ClonalFrameML version 1.9
+rescale_no_recombination = true
+compress_reconstructed_sites = false
+kappa = 6.187
+Finished reading in control file.
+
+Read 85 sequences of length 30126 sites from MERS-CoV.85.CFM.fasta
+IMPUTATION AND RECONSTRUCTION OF ANCESTRAL STATES:
+Analysing 705 sites
+Empirical nucleotide frequencies:   A 26.2%   C 20.3%   G 20.9%   T 32.6%
+Maximum log-likelihood for imputation and ancestral state reconstruction = -8317.06
+WARNING: -compress_reconstructed_sites=false not yet implemented, ignoring.
+Wrote imputed and reconstructed ancestral states to MERS-CoV.85.CFM.ML_sequence.fasta
+Wrote position cross-reference file to MERS-CoV.85.CFM.position_cross_reference.txt
+BRANCH LENGTH CORRECTION/RECOMBINATION ANALYSIS:
+Analysing 30126 sites
+Empirical nucleotide frequencies:   A 26.2%   C 20.3%   G 20.9%   T 32.6%
+Beginning branch optimization. Key to parameters (and constraints):
+B   uncorrected branch length
+L   maximum log-likelihood per branch
+M   corrected branch length/expected number of mutations     (> 0)
+Branch Camel_Egypt_NRCE_HKU270__Egypt__2013_12_30 B = 3.31917e-05 L = -0.00301221 M = 1e-07
+Branch Camel_Egypt_NRCE_HKU271__Egypt__2013_12_30 B = 6.63834e-05 L = -11.7773 M = 3.31987e-05
+Branch Camel_KFU_HKU_13__KSA__unknown__KJ650295__2013_12_30 B = 3.31917e-05 L = -0.00301225 M = 1e-07
+Branch Camel_KFU_HKU_19Dam__KSA__unknown__KJ650296__2013_12_30 B = 3.31917e-05 L = -0.00301225 M = 1e-07
+Branch Camel_KFU_HKU_1__KSA__unknown__KJ650297__2013_11_30 B = 3.31917e-05 L = -0.00301225 M = 1e-07
+Branch Al_Hasa_17_2013__Dammam__2013_05_15 B = 0.000132767 L = -31.9699 M = 9.95942e-05
+Branch Al_Hasa_18_2013__Dammam__2013_05_23 B = 3.31917e-05 L = -0.00301242 M = 1e-07
+Branch Al_Hasa_19_2013__Dammam__2013_05_23 B = 3.31917e-05 L = -0.00301237 M = 1e-07
+Branch Al_Hasa_21_2013__Al_Hofuf__2013_05_30 B = 9.95751e-05 L = -23.0416 M = 6.63968e-05
+Branch Al_Hasa_24_2013__Al_Hofuf__2013_05_01 B = 9.95751e-05 L = -21.6607 M = 6.63949e-05
+Branch Al_Hasa_25_2013__Al_Hofuf__2013_05_02 B = 9.95751e-05 L = -21.6938 M = 6.63947e-05
+Branch Al_Hasa_26_2013__Dhahran__2013_06_18 B = 3.31917e-05 L = -0.00301237 M = 1e-07
+Branch Al_Hasa_27_2013__Al_Hasa__2013_06_19 B = 6.63834e-05 L = -11.7442 M = 3.3197e-05
+Branch Al_Hasa_28_2013__Al_Hofuf__2013_06_22 B = 0.00019915 L = -56.889 M = 0.000166015
+Branch Asir_1_2013__Khamis_Mushait__2013_07_02 B = 0.000265534 L = -73.004 M = 0.000232429
+Branch Asir_2_2013__Asir__2013_08_05 B = 6.63834e-05 L = -11.7773 M = 3.31961e-05
+Branch B_Al_Hasa_12_2013__Al_Hofuf__2013_05_07 B = 3.31917e-05 L = -0.00301242 M = 1e-07
+Branch Buraidah_1_2013__Buraidah__2013_05_13 B = 0.000265534 L = -68.7106 M = 0.000232406
+Branch Camel_Al_Hasa_KFU_1_2013__KSA__2013_11_30 B = 3.31917e-05 L = -0.00301225 M = 1e-07
+Branch Camel_Egypt_NRCE_HKU205__Nile__2013_11_06 B = 0.00229023 L = -515.405 M = 0.00226127
+Branch Camel_KSA_503__KJ713297__Taif__2013_11 B = 0.000796601 L = -201.949 M = 0.000764082
+Branch Camel_KSA_505__KJ713295__Taif__2013_11 B = 0.00019915 L = -52.8026 M = 0.000166018
+Branch Camel_KSA_363__KJ713298__Taif__2013_11 B = 0.000796601 L = -202.066 M = 0.000764032
+Branch Camel_KSA_376__KJ713299__Taif__2013_11 B = 0.000630643 L = -160.79 M = 0.000597846
+Branch Camel_KSA_378__KJ713296__Taif__2013_11 B = 0.000232342 L = -57.7571 M = 0.00019922
+Branch Camel_Qatar_1_2013__Qatar__2013_10_17 B = 9.95751e-05 L = -23.7332 M = 6.64055e-05
+Branch Camel_Qatar_2__KJ650098__Qatar__2014_02_16 B = 9.95751e-05 L = -21.6936 M = 6.63999e-05
+Branch EMC_2012__Bisha__2012_06_13 B = 0.00129448 L = -326.107 M = 0.0012627
+Branch England_Qatar_2012__Doha__2012_09_19 B = 0.000265534 L = -71.6561 M = 0.000232429
+Branch England2_HPA_2013__Makkah__2013_02_10 B = 0.000365109 L = -91.0941 M = 0.000332032
+Branch F_Al_Hasa_9_2013__Al_Hofuf__2013_05_01 B = 0.000132767 L = -35.6809 M = 9.95977e-05
+Branch Florida_USA_2_Saudi_Arabia__KSA__Jeddah__2014_05_10 B = 6.63834e-05 L = -11.3027 M = 3.32001e-05
+Branch France_1_2013__KF745068__UAE__2013_05_07 B = 0.000564259 L = -144.694 M = 0.000531357
+Branch G_Al_Hasa_11_2013__Al_Hofuf__2013_05_03 B = 9.95751e-05 L = -23.4762 M = 6.6397e-05
+Branch H_Al_Hasa_7_2013__Al_Hofuf__2013_05_01 B = 6.63834e-05 L = -11.7442 M = 3.31965e-05
+Branch Hafr_Al_Batin_1_2013__Hafr_Al_Batin__2013_06_04 B = 0.000132767 L = -32.9092 M = 9.9601e-05
+Branch Hafr_Al_Batin_2_2013__Hafr_Al_Batin__2013_08_05 B = 3.31917e-05 L = -0.00301237 M = 1e-07
+Branch Hafr_Al_Batin_4_2013__Hafr_Al_Batin__2013_08_25 B = 0.000132767 L = -33.3177 M = 9.95961e-05
+Branch Hafr_Al_Batin_5_2013__Hafr_Al_Batin__2013_08_25 B = 0.000165959 L = -42.1799 M = 0.000132801
+Branch Hafr_Al_Batin_6_2013__Hafr_Al_Batin__2013_08_28 B = 3.31917e-05 L = -0.00301237 M = 1e-07
+Branch I_Al_Hasa_3_2013__Al_Hofuf__2013_04_22 B = 3.31917e-05 L = -0.00301242 M = 1e-07
+Branch Indiana_USA_1_Saudi_Arabia__KSA__Riyadh__KJ813439__2014_04_30 B = 0.00102894 L = -255.263 M = 0.00099676
+Branch J_Al_Hasa_2_2013__Al_Hofuf__2013_04_21 B = 6.63834e-05 L = -11.3028 M = 3.31968e-05
+Branch Jeddah_1_2013__KSA__2013_11_06 B = 0.000232342 L = -60.7095 M = 0.000199242
+Branch Jordan__3_2012__Al_Zarqa__2012_04_15 B = 0.00116171 L = -290.344 M = 0.00112966
+Branch K_Al_Hasa_4_2013__Al_Hofuf__2013_05_01 B = 3.31917e-05 L = -0.00301242 M = 1e-07
+Branch Madinah_1_2013__Medina__2013_09_01 B = 3.31917e-05 L = -0.0030121 M = 1e-07
+Branch Madinah_3_2013__Medina__2013_09_11 B = 0.000232342 L = -60.7127 M = 0.000199224
+Branch Munich_2013__Abu_Dhabi__2013_03_22 B = 0.000431492 L = -112.489 M = 0.000398467
+Branch O_Al_Hasa_8_2013__Al_Hofuf__2013_05_01 B = 0.000431492 L = -121.269 M = 0.000398522
+Branch Qatar_3_2013__KF961221__Qatar__2013_10_01 B = 6.63834e-05 L = -11.3026 M = 3.32013e-05
+Branch Qatar_4_2013__KF961222__Qatar__2013_10_01 B = 3.31917e-05 L = -0.00301202 M = 1e-07
+Branch Riyadh_10_2013__Riyadh__2013_08_05 B = 3.31917e-05 L = -0.0030121 M = 1e-07
+Branch Riyadh_11_2013__Riyadh__2013_08_06 B = 9.95751e-05 L = -21.2191 M = 6.63981e-05
+Branch Riyadh_12_2013__Riyadh__2013_08_08 B = 3.31917e-05 L = -0.00301237 M = 1e-07
+Branch Riyadh_13_2013__Riyadh__2013_08_13 B = 0.000165959 L = -42.6211 M = 0.00013281
+Branch Riyadh_14_2013__Riyadh__2013_08_15 B = 3.31917e-05 L = -0.00301217 M = 1e-07
+Branch Riyadh_15_2013__Riyadh__2013_08_19 B = 0.000132767 L = -35.3902 M = 9.96067e-05
+Branch Riyadh_17_2013__Riyadh__2013_08_26 B = 6.63834e-05 L = -13.5666 M = 3.32007e-05
+Branch Riyadh_1_2012__Riyadh__2012_10_23 B = 0.000365109 L = -99.8136 M = 0.00033206
+Branch Riyadh_2_2012__Riyadh__2012_10_30 B = 9.95751e-05 L = -21.6938 M = 6.6394e-05
+Branch Riyadh_3_2013__Riyadh__2013_02_05 B = 0.000663834 L = -167.013 M = 0.000631061
+Branch Riyadh_4_2013__Riyadh__2013_05_01 B = 0.000365109 L = -94.637 M = 0.000332046
+Branch Riyadh_5_2013__Riyadh__2013_07_02 B = 0.000398301 L = -104.992 M = 0.000365307
+Branch Riyadh_6_2013__Riyadh__2013_07_02 B = 0.000232342 L = -63.6657 M = 0.000199226
+Branch Riyadh_7_2013__Riyadh__2013_07_15 B = 0.000232342 L = -59.3623 M = 0.000199218
+Branch Riyadh_8_2013__Riyadh__2013_07_17 B = 3.31917e-05 L = -0.0030123 M = 1e-07
+Branch Riyadh_9_2013__Riyadh__2013_07_17 B = 0.000796601 L = -201.116 M = 0.000763991
+Branch S_Al_Hasa_14_2013__Al_Hofuf__2013_05_08 B = 0.000132767 L = -33.384 M = 9.9595e-05
+Branch T_Al_Hasa_16_2013__Al_Hofuf__2013_05_12 B = 9.95751e-05 L = -25.5559 M = 6.63986e-05
+Branch Taif_1_2013__Taif__2013_06_12 B = 3.31917e-05 L = -0.00301182 M = 1e-07
+Branch Taif_2_2013__Taif__2013_06_13 B = 0.000265534 L = -72.3482 M = 0.00023242
+Branch Taif_3_2013__Taif__2013_06_13 B = 0.000165959 L = -44.443 M = 0.000132828
+Branch Taif_4_2013__Taif__2013_06_13 B = 3.31917e-05 L = -0.00301204 M = 1e-07
+Branch V_Al_Hasa_1_2013__Dammam__2013_05_09 B = 3.31917e-05 L = -0.00301242 M = 1e-07
+Branch W_Al_Hasa_23_2013__Al_Hofuf__2013_05_13 B = 0.000265534 L = -75.2676 M = 0.000232436
+Branch Wadi_Ad_Dawasir_1_2013__Wadi_Ad_Dawasir__2013_06_12 B = 0.000464684 L = -118.218 M = 0.000431716
+Branch X_Al_Hasa_22_2013__Dammam__2013_05_09 B = 0.000265534 L = -76.1507 M = 0.000232431
+Branch Y_Al_Hasa_15_2013__Dammam__2013_05_11 B = 6.63834e-05 L = -11.7773 M = 3.31964e-05
+Branch Jeddah_C8826__KSA__Jeddah__2014_04_12 B = 9.95751e-05 L = -23.9906 M = 6.64022e-05
+Branch Jeddah_C9055__KSA__Jeddah__2014_04_14 B = 6.63834e-05 L = -11.52 M = 3.32e-05
+Branch Jeddah_C7149__KSA__Jeddah__2014_04_05 B = 3.31917e-05 L = -0.00301211 M = 1e-07
+Branch Jeddah_C7569__KSA__Jeddah__2014_04_03 B = 3.31917e-05 L = -0.00301212 M = 1e-07
+Branch Jeddah_C7770__KSA__Jeddah__2014_04_07 B = 0.000232342 L = -59.3287 M = 0.000199233
+Branch Makkah_C9355__KSA__Makkah__2014_04_15 B = 3.31917e-05 L = -0.00301211 M = 1e-07
+Branch NODE_86 B = 3.31917e-05 L = -0.00301202 M = 1e-07
+Branch NODE_87 B = 0.000398301 L = -100.69 M = 0.000365275
+Branch NODE_88 B = 3.31917e-05 L = -0.0030121 M = 1e-07
+Branch NODE_89 B = 3.31917e-05 L = -0.0030121 M = 1e-07
+Branch NODE_90 B = 0.000232342 L = -61.3618 M = 0.000199226
+Branch NODE_91 B = 3.31917e-05 L = -0.00301217 M = 1e-07
+Branch NODE_92 B = 0.000497876 L = -132.7 M = 0.000464954
+Branch NODE_93 B = 3.31917e-05 L = -0.0030123 M = 1e-07
+Branch NODE_94 B = 0.00019915 L = -54.8824 M = 0.000166016
+Branch NODE_95 B = 3.31917e-05 L = -0.00301229 M = 1e-07
+Branch NODE_96 B = 6.63834e-05 L = -11.3027 M = 3.31978e-05
+Branch NODE_97 B = 6.63834e-05 L = -11.3027 M = 3.31978e-05
+Branch NODE_98 B = 9.95751e-05 L = -21.4365 M = 6.63961e-05
+Branch NODE_99 B = 6.63834e-05 L = -11.52 M = 3.32e-05
+Branch NODE_100 B = 3.31917e-05 L = -0.00301225 M = 1e-07
+Branch NODE_101 B = 3.31917e-05 L = -0.00301225 M = 1e-07
+Branch NODE_102 B = 0.000531067 L = -135.554 M = 0.00049813
+Branch NODE_103 B = 0.000431492 L = -113.619 M = 0.000398467
+Branch NODE_104 B = 3.31917e-05 L = -0.00301212 M = 1e-07
+Branch NODE_105 B = 3.31917e-05 L = -0.00301212 M = 1e-07
+Branch NODE_106 B = 3.31917e-05 L = -0.00301212 M = 1e-07
+Branch NODE_107 B = 3.31917e-05 L = -0.00301212 M = 1e-07
+Branch NODE_108 B = 0.000165959 L = -42.1466 M = 0.000132809
+Branch NODE_109 B = 0.000165959 L = -43.129 M = 0.000132802
+Branch NODE_110 B = 3.31917e-05 L = -0.00301237 M = 1e-07
+Branch NODE_111 B = 3.31917e-05 L = -0.00301237 M = 1e-07
+Branch NODE_112 B = 9.95751e-05 L = -25.3386 M = 6.63991e-05
+Branch NODE_113 B = 3.31917e-05 L = -0.00301237 M = 1e-07
+Branch NODE_114 B = 3.31917e-05 L = -0.00301237 M = 1e-07
+Branch NODE_115 B = 9.95751e-05 L = -21.4365 M = 6.63951e-05
+Branch NODE_116 B = 6.63834e-05 L = -11.3028 M = 3.31969e-05
+Branch NODE_117 B = 3.31917e-05 L = -0.00301242 M = 1e-07
+Branch NODE_118 B = 3.31917e-05 L = -0.00301242 M = 1e-07
+Branch NODE_119 B = 3.31917e-05 L = -0.00301242 M = 1e-07
+Branch NODE_120 B = 3.31917e-05 L = -0.00301242 M = 1e-07
+Branch NODE_121 B = 3.31917e-05 L = -0.00301242 M = 1e-07
+Branch NODE_122 B = 3.31917e-05 L = -0.00301242 M = 1e-07
+Branch NODE_123 B = 3.31917e-05 L = -0.00301242 M = 1e-07
+Branch NODE_124 B = 3.31917e-05 L = -0.00301242 M = 1e-07
+Branch NODE_125 B = 3.31917e-05 L = -0.00301242 M = 1e-07
+Branch NODE_126 B = 3.31917e-05 L = -0.00301242 M = 1e-07
+Branch NODE_127 B = 3.31917e-05 L = -0.00301242 M = 1e-07
+Branch NODE_128 B = 3.31917e-05 L = -0.00301242 M = 1e-07
+Branch NODE_129 B = 3.31917e-05 L = -0.00301242 M = 1e-07
+Branch NODE_130 B = 3.31917e-05 L = -0.00301242 M = 1e-07
+Branch NODE_131 B = 3.31917e-05 L = -0.00301242 M = 1e-07
+Branch NODE_132 B = 3.31917e-05 L = -0.00301242 M = 1e-07
+Branch NODE_133 B = 0.000331917 L = -89.2742 M = 0.000298836
+Branch NODE_134 B = 0.000365109 L = -98.2156 M = 0.00033205
+Branch NODE_135 B = 0.000165959 L = -41.0891 M = 0.000132807
+Branch NODE_136 B = 0.000165959 L = -41.4643 M = 0.000132807
+Branch NODE_137 B = 0.000298725 L = -77.4332 M = 0.000265624
+Branch NODE_138 B = 0.000165959 L = -42.9114 M = 0.000132814
+Branch NODE_139 B = 0.000265534 L = -65.9379 M = 0.000232441
+Branch NODE_140 B = 0.000165959 L = -43.752 M = 0.0001328
+Branch NODE_141 B = 0.000464684 L = -122.088 M = 0.000431697
+Branch NODE_142 B = 0.000331917 L = -90.413 M = 0.000298881
+Branch NODE_143 B = 0.00215746 L = -502.421 M = 0.0021283
+Branch NODE_144 B = 3.31917e-05 L = -0.00301243 M = 1e-07
+Branch NODE_145 B = 9.95751e-05 L = -21.4366 M = 6.63937e-05
+Branch NODE_146 B = 3.31917e-05 L = -0.00301204 M = 1e-07
+Branch NODE_147 B = 0.000165959 L = -40.1399 M = 0.00013281
+Branch NODE_148 B = 9.95751e-05 L = -21.6938 M = 6.63932e-05
+Branch NODE_149 B = 3.31917e-05 L = -0.00301249 M = 1e-07
+Branch NODE_150 B = 0.000132767 L = -32.9095 M = 9.95938e-05
+Branch NODE_151 B = 6.63834e-05 L = -11.7774 M = 3.31961e-05
+Branch NODE_152 B = 9.95751e-05 L = -21.4366 M = 6.63935e-05
+Branch NODE_153 B = 9.95751e-05 L = -23.7004 M = 6.63943e-05
+Branch NODE_154 B = 6.63834e-05 L = -11.3027 M = 3.31998e-05
+Branch NODE_155 B = 9.95751e-05 L = -21.6605 M = 6.64003e-05
+Branch NODE_156 B = 0.000132767 L = -33.8585 M = 9.95958e-05
+Branch NODE_157 B = 0.000298725 L = -75.825 M = 0.000265638
+Branch NODE_158 B = 0.00019915 L = -49.158 M = 0.000166008
+Branch NODE_159 B = 0.000298725 L = -76.2699 M = 0.000265613
+Branch NODE_160 B = 0.000165959 L = -44.2195 M = 0.000132807
+Branch NODE_161 B = 9.95751e-05 L = -21.4365 M = 6.63968e-05
+Branch NODE_162 B = 0.000298725 L = -77.9478 M = 0.000265623
+Branch NODE_163 B = 0.000232342 L = -59.8371 M = 0.000199208
+Branch NODE_164 B = 9.95751e-05 L = -23.9907 M = 6.63978e-05
+Branch NODE_165 B = 0.00139405 L = -330.021 M = 0.00136232
+Branch NODE_166 B = 0.000331917 L = -85.5981 M = 0.000298773
+Branch NODE_167 B = 0.000663834 L = -176.444 M = 0.00063099
+Branch NODE_168 B = 0.000531067 L = -145.016 M = 0.000498108
+Log-likelihood after branch optimization is -8211.68
+Wrote processed tree to MERS-CoV.85.CFM.labelled_tree.newick
+All done in 0.0338783 minutes.
