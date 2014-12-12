@@ -1,6 +1,21 @@
 ![](GARD_summary.png)
 Summary of GARD results.
 --------------------------------
+![](MERS_ML_homoplasyRate.png)
+Inferred homoplasy rates from a maximum likelihood tree.
+--------------------------------
+![](MERS_Bayesian_homoplasyRate.png)
+Inferred homoplasy rates integrated over posterior distribution of trees.
+--------------------------------
+![](MERS_marginal_likelihoods.png)
+Marginal likelihoods of different models.
+--------------------------------
+![](MERS_rateHeterogeneity.png)
+Empirical rate heterogeneity across GARD-inferred breakpoints.
+--------------------------------
+![](MERS_homoplasy_control.png)
+Observed homoplasy rates (as inferred on a maximum likelihood tree) compared to controls that do not recombine.
+--------------------------------
 ![](MERS_LDhat_permutations.png)
 LDhat permutation test results for recombination in MERS.
 --------------------------------
