@@ -17,5 +17,6 @@ Done:
 - Host-polymorphism association analysis. Present data do not show the presence of "human" or "camel" alleles, but are also too poorly sampled to address the question in great detail.
 - Homoplasy rates integrating over possible tree topologies. Shows almost identical results to ML analysis.
 - Marginal likelihood estimates of models including/excluding rate heterogeneity and/or alternative tree topologies. Mostly done and appears to support a model with rate heterogeneity alone, which is not surprising given the overall appearance of recombination.
+
 TBD:
 - Manuscript.
