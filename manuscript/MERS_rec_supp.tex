@@ -82,7 +82,15 @@
 \renewcommand{\thefigure}{S\arabic{figure}}
 \renewcommand{\thetable}{S\arabic{table}}
 
-%\subsection*{Empirical rate heterogeneity}
+\begin{figure}[h]
+	\centering	
+	\includegraphics[width=0.8\textwidth]{figures/supp_MERS_GARDtrees.png}
+	\caption{\textbf{Trees recovered using GARD across the breakpoint at position 23722.}
+NJ trees reconstructed by GARD across the first identified breakpoint.
+Tree from positions 1-23722 on the left and positions 23723-30126 on the right.
+The same tips in both trees are connected by coloured lines to indicate phylogenetic incongruity.}
+	\label{GARD_trees}
+\end{figure}
 
 \begin{figure}[h]
 	\centering	
@@ -93,8 +101,6 @@ Dotted lines indicate the mean of the distribution and numbers next to the line 
 	\label{rateHet}
 \end{figure}
 
-%\subsection*{Permutation test results}
-
 \begin{figure}[h]
 	\centering	
 	\includegraphics[width=0.75\textwidth]{figures/supp_MERS_permutations.png}
@@ -103,14 +109,12 @@ All 4 observed LD decay statistics (A - corr(D',d), B - corr(r$^{2}$,d), C - G4,
 	\label{MERS_permutations}
 \end{figure}
 
-%\subsection*{Composite likelihood methods are susceptible to rate heterogeneity}
-
 \begin{figure}[h]
 	\centering	
 	\includegraphics[width=0.6\textwidth]{figures/supp_MERS_compositeLikelihoods.png}
 	\caption{\textbf{Relative composite likelihood surface.}
 Composite likelihoods for the recombination rate estimates were rescaled to be within the range [-1,0].
-Surfaces are coloured by data source: MERS-CoV estimate is in red, $\pi$BUSS simulations in green and fastsimcoal2 simulations in blue.
+Surfaces are coloured by data source: MERS-CoV estimate is in red, $\pi$BUSS simulations under a nucleotide substitution model, $\pi$BUSS simulations under a codon substitution model in purple and fastsimcoal2 simulations in blue.
 Colour scheme is identical to figure \ref{permutations} in the main text.
 Maximum composite likelihood for MERS-CoV data is achieved at $\rho$=5.66, all other datasets have an inferred recombination rate above 0 despite being simulated without recombination.}
 	\label{compLikelihoods}
@@ -119,10 +123,10 @@ Maximum composite likelihood for MERS-CoV data is achieved at $\rho$=5.66, all o
 \begin{figure}[h]
 	\centering	
 	\includegraphics[width=0.7\textwidth]{figures/supp_MERS_LDhat_windowRho.png}
-	\includegraphics[width=0.7\textwidth]{figures/supp_pibuss1.3_LDhat_windowRho.png}
-	\includegraphics[width=0.7\textwidth]{figures/supp_pibuss3_LDhat_windowRho.png}
+	\includegraphics[width=0.7\textwidth]{figures/supp_pibuss_1.3_LDhat_windowRho.png}
+	\includegraphics[width=0.7\textwidth]{figures/supp_pibuss_3_LDhat_windowRho.png}
 	\caption{\textbf{Window-based estimates of recombination rate.}
-Inferred recombination rates for 300 nucleotide-long windows in MERS-CoV genome (top), $\pi$BUSS-simulated sequences with 1.3$\times$ rate heterogeneity (middle) and 3$\times$ rate heterogeneity (bottom).
+Inferred recombination rates for 300 nucleotide-long windows in MERS-CoV genome (top), $\pi$BUSS-simulated sequences with 1.3$\times$ rate heterogeneity (middle) and 3$\times$ rate heterogeneity (bottom) under a nucleotide substitution model.
 Recombination rates that are above the inferred genome-wide recombination rate are in red.
 Simulated rate heterogeneity is sufficient to mislead this method, although the inferred recombination rates in the last third of the MERS-CoV genome are much greater than those inferred from the simulated data.}
 	\label{rho}
@@ -131,16 +135,14 @@ Simulated rate heterogeneity is sufficient to mislead this method, although the 
 \begin{figure}[h]
 	\centering	
 	\includegraphics[width=0.7\textwidth]{figures/supp_MERS_LDhat_windowSNPs.png}
-	\includegraphics[width=0.7\textwidth]{figures/supp_pibuss1.3_LDhat_windowSNPs.png}
-	\includegraphics[width=0.7\textwidth]{figures/supp_pibuss3_LDhat_windowSNPs.png}
+	\includegraphics[width=0.7\textwidth]{figures/supp_pibuss_1.3_LDhat_windowSNPs.png}
+	\includegraphics[width=0.7\textwidth]{figures/supp_pibuss_3_LDhat_windowSNPs.png}
 	\caption{\textbf{Window-based estimates of polymorphic site density.}
-Inferred polymorphic site densities for 300 nucleotide-long windows in MERS-CoV genome (top), $\pi$BUSS-simulated sequences with 1.3$\times$ rate heterogeneity (middle) and 3$\times$ rate heterogeneity (bottom).
+Inferred polymorphic site densities for 300 nucleotide-long windows in MERS-CoV genome (top), $\pi$BUSS-simulated sequences with 1.3$\times$ rate heterogeneity (middle) and 3$\times$ rate heterogeneity (bottom) under a nucleotide substitution model.
 Windows are coloured red if their recombination rate is above the inferred genome-wide recombination rate.
 Extreme rate heterogeneity (3$\times$) results in a higher density of polymorphic sites in the region with the higher rate.}
 	\label{SNPs}
 \end{figure}
-
-%\subsection*{Bayesian ancestral sequence reconstruction agrees with ML methods}
 
 \begin{figure}[h]
 	\centering	
@@ -148,13 +150,10 @@ Extreme rate heterogeneity (3$\times$) results in a higher density of polymorphi
 	\caption{\textbf{Homoplasy degrees inferred by BEAST.}
 Position along the genome is shown on the x axis and homoplasy degree, the number of times a particular mutation has occured in excess in the tree, is shown on the y axis.
 Individual mutations are marked by vertical lines, synonymous ones in green and non-synonymous in red with transparency representing the posterior probability of a given homoplasy degree for each mutation.
-Kernel density estimates of homoplasic/synapomorphic and synonymous/non-synonymous sites are shown as blue and green lines.
+The ratio of apparent homoplasy over synapomorphy kernel density estimates (bandwidth=0.1) is shown in blue for synonymous (dashed) and non-synonymous (solid) sites separately.
 Arrows at the top indicate the positions and names of coding sequences within the MERS-CoV genome.}
 	\label{homoplasyRates_Bayesian}
 \end{figure}
-
-
-%\subsection*{Host association}
 
 \begin{figure}[h]
 	\centering	
@@ -166,9 +165,30 @@ No perfect associations (association index = 1.0) between particular alleles and
 	\label{host_association}
 \end{figure}
 
+\begin{figure}[h]
+	\centering	
+	\includegraphics[width=0.95\textwidth]{figures/supp_MERS_multiTree.png}
+	\caption{\textbf{Maximum likelihood phylogenies across MERS-CoV genome.}
+Maximum likelihood phylogenies recovered with PhyML \citep{guindon_2003} under GTR+$\Gamma_{4}$ \citep{tavare_1986,yang_1994} nucleotide substitution model across 4000 nucleotide fragments derived from the MERS-CoV genome.
+Each tip is connected to its counterpart in phylogenies of neighboring fragments and coloured sequentially according to the order in which tips appear in the first fragment.
+Arrows at the top indicate the relative positions, lengths and names of coding sequences in the MERS-CoV genome, arrows at the bottom indicate the relative lengths of fragments used to produce the phylogenies.
+}
+	\label{multiTree}
+\end{figure}
+
+\begin{figure}[h]
+	\centering	
+	\includegraphics[height=0.95\textwidth]{figures/supp_alternative_tests.png}
+	\caption{\textbf{Results (p-values) from pairwise homoplasy index (PHI) and 3Seq analyses on MERS and simulated datasets.}
+Both PHI and 3Seq analyses indicate that there is strong evidence of recombination in MERS-CoV (PHI p-value and Bonferroni-corrected 3Seq p-values $<$0.05, in red).
+Some simulated datasets are spuriously identified as recombinant by either PHI or 3Seq, but not both.}
+	\label{alt_tests}
+\end{figure}
+
+
 \clearpage
 
-%\bibliographystyle{mbe}
-%\bibliography{MERS_rec}
+\bibliographystyle{mbe}
+\bibliography{MERS_rec}
 
 \end{document}
